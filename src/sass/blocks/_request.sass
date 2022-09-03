@@ -1,0 +1,41 @@
+.request
+    padding: 68px 0 87px 0
+    &__title
+        margin-top: 27px
+    &__subtitle
+        margin: 33px 0 0 8px
+        font-weight: 400
+        font-size: 22px
+        color: var(--main-color)
+        &_red
+            margin: 61px 0 0 8px
+            color: #FF5656
+    &__list
+        margin: 20px 0 0 0
+        list-style-type: none
+        padding-inline-start: 53px
+    &__list-item
+        font-weight: 300
+        font-size: 17px
+        margin-top: 8px
+        color: var(--b-color)
+        position: relative
+        &:first-child
+            margin-top: 0
+        &::before
+            content: ''
+            position: absolute
+            left: -35px
+            top: 4px
+            width: 21px
+            height: 20px
+            background: url(../icons/blue_arrow.png)
+        &_red
+            &::before
+                background: url(../icons/red_arrow.png)
+
+    &__descr
+        margin-top: 25px
+        font-weight: 300
+        font-size: 17px
+        color: var(--main-color)
