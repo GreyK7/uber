@@ -15,6 +15,13 @@
         height: 4px
         background-color: var(--w-color)
         transition: 0.5s all linear
+    &_active .hamburger__elem
+            &:nth-child(2)
+                display: none
+            &:first-child
+                transform: rotate(45deg) translateY(9px)
+            &:last-child
+                transform: rotate(-45deg) translateY(-8px)
                 
 
     
